@@ -20,10 +20,11 @@
 #include "cudaIDWH.h"
 
 // 此类是从 CudaIDWDll.dll 导出的
-class CUDAIDWDLL_API CudaIDWInterpolation 
+class CUDAIDWDLL_API CudaIDWInterpolation
 {
 public:
 	CudaIDWInterpolation(void);
+	~CudaIDWInterpolation(void);
 	
 public:
 	enum DistanceMode

@@ -103,3 +103,9 @@ int CudaIDWInterpolation::getSizeOfExpandedPoints( void )
 {
 	return sizeOfExpandedData;
 }
+
+CudaIDWInterpolation::~CudaIDWInterpolation( void )
+{
+	if (expandedData != NULL)
+		delete[] expandedData;
+}
